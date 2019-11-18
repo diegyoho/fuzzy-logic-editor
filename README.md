@@ -2,26 +2,32 @@
 
 > Editor de Lógica Fuzzy para Unity.
 
-Fuzzy Logic Editor é uma extensão do motor de jogos Unity que permite a definição de variáveis linguísticas e das regras que controlam o sistema de inferência fuzzy em uma interface visual. A extensão foi implementada utilizando a biblioteca [AForge.Net Framework](http://www.aforgenet.com/framework/).
-
-![](../header.png)
+Fuzzy Logic Editor é uma extensão para Unity que permite utilizar Lógica Fuzzy em seus projetos com o mínimo de codificação. Sua pricinpal funcionalidade e a definição de variáveis linguísticas e das regras que controlam o sistema de inferência fuzzy em uma interface visual. A extensão foi implementada utilizando a biblioteca [AForge.Net Framework](http://www.aforgenet.com/framework/).
 
 ## Instalação
+Baixe o pacote fuzzy-logic-editor.unitypackage.
 
-OS X & Linux:
+No seu projeto Unity, vá em: Assets > Import Package > Custom Package, e selecione o arquivo.
+![](https://github.com/chicodiegomoreira/fuzzylogiceditor/blob/master/images/importpackage.png)
+![](https://github.com/chicodiegomoreira/fuzzylogiceditor/blob/master/images/importpackage2.png)
 
-```sh
-npm install my-crazy-module --save
-```
 
-Windows:
+## Utilização
 
-```sh
-edit autoexec.bat
-```
+### Editor Visual
 
-## Exemplo de uso
+O Editor Visual fica em Fuzzy Logic > Fuzzy Logic Editor. Ele contém duas abas: Fuzzy Sets e Rules.
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
+Fuzzy Sets é a interface de definição de variáveis linguísticas e conjuntos fuzzy.
+![](https://github.com/chicodiegomoreira/fuzzylogiceditor/blob/master/images/logicfuzzyeditor.png)
 
-_Para mais exemplos, consulte a [Wiki][wiki]._ 
+Rules é a interface de definição das regras do sistema de inferência.
+![](https://github.com/chicodiegomoreira/fuzzylogiceditor/blob/master/images/logicfuzzyeditor-rules.png)
+
+### FIS: Fuzzy Inference System
+
+A classe estática FIS (Fuzzy Inference System) possui funções que facilicitam o processo de Fuzzificação (inserção de valores no sistema) e Defuzzificação (obtenção dos resultados da inferencia).
+
+* FIS.SetInput(variableName, value): Define uma entrada numérica para uma das variáveis linguísticas.
+
+* FIS.Evaluate(variableName): Obtém uma saída numérica para uma variável lingüística de saída escolhida.
