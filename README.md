@@ -5,7 +5,7 @@
 Fuzzy Logic Editor é uma extensão para Unity que permite utilizar Lógica Fuzzy em seus projetos com o mínimo de codificação. Sua pricinpal funcionalidade e a definição de variáveis linguísticas e das regras que controlam o sistema de inferência fuzzy em uma interface visual. A extensão foi implementada utilizando a biblioteca [AForge.Net Framework](http://www.aforgenet.com/framework/).
 
 ## Instalação
-Baixe o pacote fuzzy-logic-editor.unitypackage.
+Baixe o pacote [fuzzy-logic-editor.unitypackage](https://github.com/chicodiegomoreira/fuzzylogiceditor/raw/master/fuzzy-logic-editor.unitypackage).
 
 No seu projeto Unity, vá em: Assets > Import Package > Custom Package, e selecione o arquivo.
 ![](https://github.com/chicodiegomoreira/fuzzylogiceditor/blob/master/images/importpackage.png)
